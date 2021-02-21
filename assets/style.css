@@ -1,0 +1,29 @@
+* {
+    background-color: #e5696d;
+}
+
+
+#head-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    border: 2px solid greenyellow
+}
+
+#scores {
+    border: 2px solid red;
+    font-weight: bold;
+}
+
+#timer {
+    border: 2px solid blue;
+    margin-left: 443px
+}
+
+#title {
+    text-align: center;
+}
+
+#quizContent {
+    text-align: center;
+}

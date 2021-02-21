@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="style.css">
+    <title>Coding Quiz</title>
+</head>
+
+<body>
+
+<div id="head-container">   
+    <div id="scores">
+        <p>View Highscores</p>
+    </div>
+
+    <div>
+        <p id="timer"></p>
+    </div>
+</div> 
+
+<div id="quiz-content-container">
+    <div id="quizContent">
+        <h1 id="title">Coding Quiz</h1>
+        <p id="question-text">Answer the coding quiz questions within the time limit. If you answer incorrectly,<br> 
+            time will be subtracted and your score will decrease. Good luck!</p>
+    </div>
+   
+	<div>
+        <input type="radio" id="rad1"><label></label><br>
+		<input type="radio" id="rad2"><label></label><br>
+		<input type="radio" id="rad3"><label></label><br>
+		<input type="radio" id="rad4"><label></label><br>
+    </div>
+
+    <div>
+        <button onclick= "nextQuestion()" id="submitBtn" type="button">Submit</button>
+    </div>
+
+    <div>
+        <button id= "startBtn" type="button">Start</button>
+    </div>
+</div>
+
+<script src="script.js"></script>    
+</body>
+</html>
