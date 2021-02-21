@@ -51,29 +51,6 @@ var questionSet3 = possibleAnswers[2].split(",");
 var questionSet4 = possibleAnswers[3].split(",");
  
 
-
-var answersArray = [
-    { 
-        possibleAnswers: ['A.	Hypertext Markup Language', 'B.	Hypertext Markdown Language', 'C.	Human Technology Machine Learning', 'D.	Hyper Training Machine Language'],
-        correctAnswer: 'A. HyperText Markup Language'
-    
-    },
-    { 
-      possibleAnswers: ['A.	In the <body> section', 'B.	In the footer section', 'C. In an <h1> tag', 'D. In the <head> section'], 
-      correctAnswer: 'D. In the <head> section'
-    },
-    { 
-      possibleAnswers: ['A.	1,000,000','B. 15','C. 4.29 billion','D. Unlimited'],
-      correctAnswer: 'C. 4.29 billion'
-    },
-    { 
-      possibleAnswers: ['A.	The JavaScript link', 'B. Data values', 'C.	The console', 'D. The webpage'],
-      correctAnswer: 'B. Data value'
-    }
-
-]
-
-
 //Timer that begins when the start button is pressed
 function setTime() {
 	
@@ -137,4 +114,15 @@ startQuizBtn.addEventListener('click', function() {
     
 });
 
+var displayScoreBtn = document.querySelectorAll("body")
 
+displayScoreBtn.addeventlistener('click', function() {
+  document.getElementById("scoreButton").innerHTML = "";
+  document.getElementById("quiz-content-container").innerHTML = "Display Highscore";
+
+
+});
+
+
+// localStorage.setItem(score);
+//     renderLastRegistered();
